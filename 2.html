@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>웹 페이지 만들기 연습 중</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+  </head>
+  <body>
+    <div class="all">
+      <div class="header">
+          <h1><a href="index.html">SYR-BIBLIO</a></h1>
+          <div class="nav">
+              <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="HTML기초.html">HTML</a></li>
+                  <li><a href="2.html">CSS</a></li>
+                  <li><a href="index.html">JAVA</a></li>
+                  <li><a href="PythonPage.html">PYTHON</a></li>
+                  <li><a href="diary.html">DIARY</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="text">
+        <p style="margin-top:60px;">
+          <h2 style="margin-bottom:30px">CSS 기초</h2>
+          <h4>선택자</h4>
+        html에 css를 적용하는 방법은 2가지. 태그 자체의 속성에 (style="")를 사용하는 것과 스타일 태그 사용 후 적용할 태그를 입력하는 것.<br>
+        전자는 하나에만 적용, 후자는 태그 전체에 적용.<br><br>
+
+        태그 선택자 - [style]h1{color:red;font-size:12px;}[/style]이라고 했을 때,<br>h1을 선택자(selector)라고 하고, 중괄호의 내용을 선언(declaration), 콜론(구분자 separator) 왼쪽은 속성(property), 오른쪽은 값(value).<br>
+        태그 선택자는 그 태그의 모든 것을 선택함. 태그의 내용 중 하나만 고르고 싶으면 아이디 선택자 사용해야함.<br><br>
+        ID 선택자 - 선택하려는 태그에 id="select"로 속성을 준다. 이후 스타일 태그 안에 #select라고 쓰고 선언하면 id값이 select인 내용에만 적용된다.<br>
+        아이디는 그 값이 오직 하나일 때만 사용하는 것이므로 여러 값을 가질 수 없다.<br>
+        여러개의 내용에 같은 효과를 주고 싶다면 클래스 선택자를 사용해야한다.<br>
+        Class 선택자 - id부분에 class로 바꿔쓰고, #대신 .를 사용하면 된다. 어떤 태그이든 같은 클래스라면 그룹핑되어 같은 효과가 적용된다.<br><br>
+        </p><p style="margin-top:45px;">
+        더 섬세한 작업을 위해 <u>부모자식 선택자</u>를 사용.<br>
+        만약 li가 두개일때 하나의 li에만 효과를 주고 싶다면 효과를 주려는 li앞에 선택자가 어느 태그에 들어있는지 작성하면 됨.<br>
+        만약 ul태그 아래에 들어있다면 ul li{}로 사용.(부모 자손) <br>
+        또, 만약 리스트 아래에 또 ul li 리스트가 들어있다면 함께 효과가 적용될 수 있으니 아이디 선택자를 함께 사용해서 효과를 적용할 ul에 아이디를 주고, #id>li로 사용.<br>
+        >는 바로 밑에만 적용한다는 의미.(부모자식) 이때, 스타일 태그의 내용은 상속이 적용되는 color의 경우 내부 리스트에도 적용되고, 해당 리스트에만 적용되는 border(테두리)의 경우는 id의 리스트에만 적용.<br>
+        만약 같은 효과를 주고싶은 태그들이 있다면 선택자를 콤마로 묶어서 작성해도 괜찮음. ul,ol{}이런 식.<br><br>
+
+        <a href ="https://flukeout.github.io/" target="_blank">선택자 공부용 게임 사이트</a>
+        </p><p style="margin-top:30px;">
+        pseudo class selector 가상 클래스 선택자 중 몇가지를 배울것. <br>
+        만약 링크가 두 개 있을 때 하나를 눌러보면 기본적으로 보라색으로 변함.<br>
+        이때 a:active를 사용하면 마우스로 눌렀을 때의 효과를 줄 수 있음. a:hover를 사용할 경우 마우스를 올려놨을 때의 효과를 줄 수 있음.<br>
+        이 두가지는 동급이기 때문에 뒤쪽에 있는 선언이 우선시됨. 원하는 효과를 뒤에 두면 됨. <br>
+        a:visited 는 방문했던 링크를 의미. a:link는 방문 안했던 링크 선택.<br><br>
+
+        a:focus라는 건 탭키를 누르면 무언가 선택되는데, 이때 엔터를 누르면 클릭과 같은 효과를 줌. 보통 가장 뒤에 선언.<br>
+        <input type="text"><br>
+         input 태그의 타입을 텍스트로 주고, 스타일 태그에서 input태그에 포커스, 효과를 배경 검정, 글자 흰색<br>
+         글자를 작성할 때 포커싱이 되어 색이 바뀌고, 포커싱이 빠져나오면 다시 흰바탕 검은 글씨로 바뀜.</p>
+        <p style="margin-top:45px;">
+        <img src="https://pbs.twimg.com/media/EEjfJXdXsAAgeYh?format=png&name=large" width=65%>
+
+        <p style="margin-top:45px;">
+        <h2>속성</h2>
+
+
+
+
+
+
+
+        </p>
+
+      </div>
+    </div>
+  </body>
+<html>
