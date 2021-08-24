@@ -2,6 +2,12 @@
     font-family: abster;
     src: url(font/abster-webfont.woff) format('woff');
 }
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
 *{
     margin: 0;
@@ -53,11 +59,12 @@
     transform: translate(-50%,-50%);
     color: white;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Pretendard-Regular';
+    line-height: 1.5;
 }
 
 .container .hero h2{
-    font-size: 50px;
+    font-size: 60px;
     margin-bottom: 20px;
 }
 
@@ -75,6 +82,7 @@
     outline: none;
     cursor: pointer;
     transition: all .4s;
+    font-family: 'Pretendard-Regular';
 }
 
 .container .hero button:hover{
